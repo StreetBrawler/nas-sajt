@@ -67,7 +67,7 @@ header::before {
     display: block;
     background: url(img/space1.jpg);
     background-size: cover;
-    transform-origin: center center 0;
+    transform-origin: center center 0 ;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
     min-height: 100vh;
@@ -196,7 +196,7 @@ footer {
 	font-size: 1vw;
 }
  
- a { 
+.neon { 
 	margin-left: 20px;
 	margin-right: 20px;
 	position: relative;
@@ -211,34 +211,49 @@ footer {
 	transition: 0.2s;
 } 
 
-a:hover { 
+.neon:hover { 
     color: #255784; 
     background: #2196f3; 
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
 }
 
 .parallax{
-	position: relative;
 	overflow: hidden;
 }
 
-.parallax__bgp{
-	display: block;
-	height: 60vh;
-	width: 100vw;
-	background: url(img/space6.png);
-	background-size: cover;
-    background-position: center center;
-	padding: 0px;
-	text-align: center;
-	font-family: Verdana, sans-serif;
-	font-size: 4vw;
+.parallaxbgp{
+	box-sizing: border-box;
+    height: 60vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.parallax__ship{
-	position: absolute;
-	width: 15%;
-	bottom: 15vw;
-	right: 30vw;
-	transform: rotate(-20deg);
+.parallaxbgp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(img/space7.jpg);
+    background-size: cover;
+    transform-origin: center center 0 ;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.parallaxbgp h1{
+	font-size: 4vw;
+	color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Verdana, sans-serif;
 }
