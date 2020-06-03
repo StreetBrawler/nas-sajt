@@ -30,13 +30,13 @@ function realtimeClock(){
 	var t=setTimeout(realtimeClock, 500);
 }
 
-function mailform(){
-	document.getElementById('message').innerHTML = output
-}
+$(document).ready(function(){
 
-let ship = document.getElementById("ship");
+var top_header = $('.parallaxbgp');
+top_header.css({'background-position':'center center'}); 
 
-window.addEventListener('scroll', function(){
-var value = window.scrollY;
-ship.style.right = value * 0.5 + 'px'
+$(window).scroll(function () {
+var st = $(this).scrollTop();
+top_header.css({'background-position':'center calc(50% - '+(st*2)+'px)'});
+})
 })
