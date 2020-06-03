@@ -34,20 +34,9 @@ function mailform(){
 	document.getElementById('message').innerHTML = output
 }
 
-$(function () {
-	let w = $(window);
-	
-	parallax(w.scrollTop());
-	
-	w.on('scroll', function() {
-		let top = $(this).scrollTop();
-		parallax(top);	
-	});
-	
-});
+let ship = document.getElementById("ship");
 
-function parallax(top){
-	$('.parallax__ship').css(
-	  'transform', 'translateX(' + (top / -6) + 'vw)'
-	);
-}
+window.addEventListener('scroll', function(){
+var value = window.scrollY;
+ship.style.right = value * 0.5 + 'px'
+})
