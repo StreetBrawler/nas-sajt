@@ -132,7 +132,7 @@ list-style: none;
   text-align: center;
 }
 
-.dot {
+/*.dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -140,7 +140,17 @@ list-style: none;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 2s ease;
+}*/
+
+.dot {
+  height: 4px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #323232;
+  display: inline-block;
+  transition: background-color 2s ease;
 }
+
 
 .active {
   background-color: #717171;
