@@ -411,8 +411,8 @@ footer {
     right: 0;
     bottom: 0;
     display: block;
-    background-image: url(img/space8.jpg);
-	opacity:0.4;
+    background: #111827;
+	opacity:0.3;
     background-size: cover;
 	background-position: center;
     transform-origin: center center 0 ;
