@@ -48,7 +48,7 @@ body {
 	font-family: SanFranHeavy;
 }
 
-.hw, header:before {
+.hw, .hw:before {
     background: 50% 50% / cover;
 }
 
@@ -166,6 +166,12 @@ list-style: none;
 hr.sr {
   border: 1px solid;
   width: 40vw;
+}
+
+hr.sr2 {
+  border: 1px solid;
+  width: 80vw;
+  border-color: #545862;
 }
 
 meintro {
@@ -382,4 +388,122 @@ footer {
 @font-face {
   font-family: SanFranHeavy;
   src: url(fonts/SFProHeavy.otf);
+}
+
+@font-face {
+  font-family: SanFranBold;
+  src: url(fonts/SFProBold.otf);
+}
+
+.footer{
+	box-sizing: border-box;
+	position: relative;
+    transform-style: inherit;
+	height: 130px;
+	margin-top: 30px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-image: url(img/space8.jpg);
+	opacity:0.4;
+    background-size: cover;
+	background-position: center;
+    transform-origin: center center 0 ;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.footer h1{
+	font-size: 20px;
+	color: white;
+	font-family: SanFranBold;
+}
+
+#youtube{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#youtube:hover{
+	color: #B30010;
+}
+
+#github{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#github:hover{
+	color: #942AF8;
+}
+
+#twitter{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#twitter:hover{
+	color: #00B9EB;
+}
+
+#wiki{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#wiki:hover{
+	color: #CFCFCF;
+}
+
+#proj{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#proj:hover{
+	color: #2196f3;
+}
+
+.copyrights{
+	font-size: 15px;
+	color: #545862;
+	text-align: center;
 }
