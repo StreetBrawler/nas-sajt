@@ -71,100 +71,117 @@ body {
 
 
 .header {               /*хедер*/
-  width: 100%;
-  display: block;
-  background: #808000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+	height: 7.3vh;
+	width: 100%;
+	display: block;
+	background-color:rgba(17, 24, 39, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
 }
 .header_container {
-  width: 100%;
-  margin: 0 auto;
+	width: 100%;
+
 }
 
 .header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header_logo {
-  text-decoration: none;
-  font-family: SanFranBold;
-  position: relative;
-  top: 50%;
-  left: 2%;
-  font-size: 3vw;
-  font-weight: 700;
-  color: white;
-  align-content: center;
+	text-decoration: none;
+	font-family: SanFranBold;
+	position: relative;
+	top: 0.1vh;
+	left: 2vw;
+	font-size: 6vmin;
+	font-weight: 700;
+	color: white;
+	align-content: center;
 }
 
 .dws-menu *{          /*менюшКА*/
-  padding: 0;
-  display: block;
+	padding: 0;
+	margin: 0;
+	display: block;
 }
 
-.dws-menu ul,
-.dws-menu ol{
-list-style: none;
+.dws-menu ul, .dws-menu ol{
+	list-style: none;
 }
 
 .dws-menu > ul{
-  display: flex;
-}
-
-.dws-menu > ul li a{
-  display: block;
-  vertical-align: top;
-  position: relative;
-  padding: 0 auto;
-  background: #FF0000;
-  font-size: 1.8vw;
-  color: #008000;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s linear;
-  margin: 0 2px;
+	display: flex;
 }
 
 .dws-menu > ul li{
-  position: relative;
-  min-width: 1vw;
+	display: block;
+	position: relative;
+	padding: 0;
+	width: 40vmin;
+	height: 7.3vh;
+	text-align: center;
+	font-size: 4vmin;
+	color: white;
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+	font-family: SanFranBold;
 }
 
-.dws-menu > ul li > a i.fa{
-  position: relative;
-  top: 1vh;
-  left: 1vw;
-  font-size: 10px;
+.dws-menu a{
+	display: block;
+	width: 40vmin;
+	height: 7.3vh;
+	top: 5vh;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+	font-family: SanFranBold;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 
 
 .dws-menu li a:hover{
-  background: #008000;
-  color: #FF0000;
-  transition: all 0.2s linear;
+	background-color: white;
+	color: #111827;
+	transition: all 0.2s linear;
 }
 
 .dws-menu li ul {         /*вкатывающаяся менюшка*/
-  position: absolute;
-  min-width: 2vw;
-  display: none;
+	position: absolute;
+	width: 40vmin;
+	display: none;
+
 }
 
+.dws-menu h3{
+	font-size: 1.8vw;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s linear;
+	vertical-align: center;
+}
 
 .dws-menu li > ul li a{
-  padding: 10px;
-  text-transform: none;
-  background: #FF0000;
+	width: 40vmin;
+	top: 100%;
+	text-transform: none;
+	background-color:rgba(17, 24, 39, 0.5);
+	text-transform: uppercase;
 }
 
 .dws-menu li:hover > ul{
-  display: block;
+	display: block;
 }
 
 .container {
@@ -287,6 +304,7 @@ footer {
 	font-size: 2em; 
     overflow: hidden; 
 	transition: 0.2s;
+	font-family: SanFranBold;
 } 
 
 .neon:hover { 
@@ -483,6 +501,16 @@ footer {
   src: url(fonts/SFProBold.otf);
 }
 
+@font-face {
+  font-family: SanFranReg;
+  src: url(fonts/SFProRegular.otf);
+}
+
+@font-face {
+  font-family: SanFranLight;
+  src: url(fonts/SFProLight.otf);
+}
+
 .footer{
 	box-sizing: border-box;
 	position: relative;
@@ -606,13 +634,13 @@ footer {
 }
 
 .hwq h1 {
-  font-size: 4vw;
+	font-size: 4vw;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  font-family: SanFranHeavy;
+	font-family: SanFranHeavy;
 }
 
 .hwq, .hwq:before {
@@ -721,6 +749,55 @@ footer {
 
 
 input[type="submit"].box4:hover {
-  color: black;
-  background-color: white;
+	color: black;
+	background-color: white;
+}
+
+.about {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    background: url(img/space8.jpg);
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+}
+.about h1 {
+	font-size: 3vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box5{
+	position: absolute;
+	display: block;
+	border: 2px solid white;
+	margin-top: 5vh;
+	height: 3vw;
+	width: 10vw;
+	top: 80vh;
+	left: 45vw;
+	transition:0.5s all linear;
+}
+
+.box5 h2{
+	font-size: 1.3vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: SanFranBold;
+	transition:0.5s all linear;
+}
+
+.box5:hover { 
+	color: black;
+    background-color: white;
 }
