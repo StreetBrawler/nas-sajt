@@ -69,7 +69,46 @@ body {
     min-height: 100vh;
 }
 
-.dws-menu *{               /*МЕНЮ*/
+/*.container_inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: orange;
+}
+
+.header_top {
+  padding-top: 15px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_inner {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  position: relative;
+
+  color:white;
+  text-decoration: none;
+  transition: 0.1s linear;
+}
+*/
+.dws-menu *{          /*менюшКА*/
   margin:0;
   padding: 0;
 }
@@ -86,21 +125,62 @@ list-style: none;
 
 .dws-menu > ul li a{
   display: block;
-  background: #0B0B0B;
+  background: #FF0000;
   padding: 15px 30px 15px 40px;
   font-size: 15px;
-  color: #ffffff;
-
+  color: #008000;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
 }
 
-.dws-menu li ul{
+.dws-menu > ul li{
+  position: relative;
+  min-width: 150px;
+  border-right: 1px solid #FFFF00;
+}
+
+.dws-menu > ul li > a i.fa{
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+.dws-menu > ul li: first-child{
+  border-left: 1px solid #FFFF00;
+}
+.dws-menu > ul li: last-child{
+  border-left: 1px solid #FFFF00;
+}
+
+.dws-menu li a:hover{
+  background: #008000;
+  color: #FF0000;
+  transition: all 0.2s linear;
+}
+
+.dws-menu li ul {         /*вкатывающаяся менюшка*/
   position: absolute;
   min-width: 150px;
+  display: none;
 }
 
 .dws-menu li > ul li{
-  border: 1px solid #17b7e3;
+  border: 1px solid #00FFFF;
 }
+
+.dws-menu li > ul li a{
+  padding: 10px;
+  text-transform: none;
+  background: #FF0000;
+}
+
+.dws-menu li:hover > ul{
+  display: block;
+}
+
+
 .container {
     z-index: 2;
     position: absolute;
