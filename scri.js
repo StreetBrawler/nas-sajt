@@ -40,3 +40,5 @@ var st = $(this).scrollTop();
 top_header.css({'background-position':'center calc(50% - '+(st*2)+'px)'});
 })
 })
+
+

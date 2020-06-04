@@ -2,11 +2,6 @@
 	box-sizing: border-box;
 }
 
-.padd{
-	padding: 40px;
-}
-
-
 html {
     margin: 0;
     padding: 0;
@@ -67,6 +62,7 @@ header::before {
     display: block;
     background: url(img/space1.jpg);
     background-size: cover;
+	background-position: center;
     transform-origin: center center 0 ;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
@@ -241,6 +237,7 @@ footer {
     display: block;
     background: url(img/space7.jpg);
     background-size: cover;
+	background-position: center;
     transform-origin: center center 0 ;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
@@ -256,4 +253,128 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
 	font-family: Verdana, sans-serif;
+}
+
+.parallaxbgp2{
+	box-sizing: border-box;
+    height: 60vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parallaxbgp2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(img/space6.png);
+    background-size: cover;
+	background-position: center;
+    transform-origin: center 100 0 ;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.parallaxbgp2 h1{
+	font-size: 4vw;
+	color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Verdana, sans-serif;
+}
+
+.phleft{
+	position: relative;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	height:250px;
+	width: 250px;
+	border: 2px solid #2196f3;
+	overflow: hidden;
+	transition: 1s all ease;
+}
+
+.phleft:hover { 
+    color: #255784; 
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
+}
+
+.phleft:hover .desc { 
+	visibility: visible;
+	opacity: 1;
+}
+
+.phleft .desc{
+	font-size: 20px;
+	color: white;
+    margin: 0;
+    position: absolute;
+	align: left;
+	top: 136%;
+    left: 56%;
+	height: 250px;
+	width: 250px;
+    transform: translate(-50%, -50%);
+	font-family: Verdana, sans-serif;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s, visibility 0.6s;
+}
+
+.phright{
+	position: relative;
+	display: block;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	height:250px;
+	width: 250px;
+	border: 2px solid #2196f3;
+	overflow: hidden;
+	transition: 1s all ease;
+}
+
+.phright:hover { 
+    color: #255784; 
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3; 
+}
+
+.phright:hover .desc { 
+	visibility: visible;
+	opacity: 1;
+}
+
+.phright .desc{
+	font-size: 20px;
+	color: white;
+    margin: 0;
+    position: absolute;
+	align: left;
+	top: 136%;
+    left: 56%;
+	height: 250px;
+	width: 250px;
+    transform: translate(-50%, -50%);
+	font-family: Verdana, sans-serif;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s, visibility 0.6s;
+}
+
+.objectcover {
+	object-fit: cover; 
+	height:250px;
+	width: 250px;
 }
