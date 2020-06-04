@@ -563,7 +563,7 @@ footer {
     display: block;
     background: url(img/test.jpg);
     background-size: cover;
-  background-position: center;
+	background-position: center;
     transform-origin: center center 0 ;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
@@ -582,19 +582,79 @@ footer {
     text-transform: uppercase;
 }
 .hwqe h1 {
-  font-size: 4vw;
+	font-size: 4vw;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  font-family: SanFranHeavy;
+	font-family: SanFranHeavy;
 }
 .box3{
-  display: inline-block;
-  border: 2px solid white;
-  margin: 0;
-  padding: 0;
-  height:250px;
-  width: 250px;
+	position: absolute;
+	display: block;
+	border: 2px solid white;
+	margin-top: 5vh;
+	height: 3vw;
+	width: 10vw;
+	top: 55vh;
+	left: 45vw;
+	transition:0.5s all linear;
+}
+
+.box3 h2{
+	font-size: 1.3vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: SanFranBold;
+	transition:0.5s all linear;
+}
+
+.box3:hover { 
+	color: black;
+    background-color: white;
+}
+
+#returnbutton{
+	color: white;
+}
+
+#returnbutton:hover{
+	color: black;
+}
+
+.box4{
+	position: relative;
+	display: block;
+	background-color: #0B0B0B;
+	border: 2px solid white;
+	margin-top: 5vh;
+	height: 3vw;
+	width: 10vw;
+	left: 45vw;
+	color: white;
+	font-family: SanFranBold;
+	transition:0.5s all linear;
+	font-size: 1.3vw;
+}
+
+.box4 h2{
+	font-size: 1.3vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-family: SanFranBold;
+	transition:0.5s all linear;
+}
+
+
+input[type="submit"].box4:hover {
+  color: black;
+  background-color: white;
 }
