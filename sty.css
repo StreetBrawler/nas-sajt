@@ -48,7 +48,7 @@ body {
 	font-family: SanFranHeavy;
 }
 
-.hw, header:before {
+.hw, .hw:before {
     background: 50% 50% / cover;
 }
 
@@ -198,7 +198,7 @@ list-style: none;
   text-align: center;
 }
 
-.dot {
+/*.dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -206,7 +206,17 @@ list-style: none;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 2s ease;
+}*/
+
+.dot {
+  height: 4px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #323232;
+  display: inline-block;
+  transition: background-color 2s ease;
 }
+
 
 .active {
   background-color: #717171;
@@ -232,6 +242,12 @@ list-style: none;
 hr.sr {
   border: 1px solid;
   width: 40vw;
+}
+
+hr.sr2 {
+  border: 1px solid;
+  width: 80vw;
+  border-color: #545862;
 }
 
 meintro {
@@ -393,7 +409,7 @@ footer {
 	height: 250px;
 	width: 250px;
     transform: translate(-50%, -50%);
-	font-family: Verdana, sans-serif;
+	font-family: SanFranBold;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1s, visibility 0.6s;
@@ -433,7 +449,7 @@ footer {
 	height: 250px;
 	width: 250px;
     transform: translate(-50%, -50%);
-	font-family: Verdana, sans-serif;
+	font-family: SanFranBold;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1s, visibility 0.6s;
@@ -444,8 +460,207 @@ footer {
 	height:250px;
 	width: 250px;
 }
+.box1 {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+.box2 {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+}
 
 @font-face {
   font-family: SanFranHeavy;
   src: url(fonts/SFProHeavy.otf);
+}
+
+@font-face {
+  font-family: SanFranBold;
+  src: url(fonts/SFProBold.otf);
+}
+
+.footer{
+	box-sizing: border-box;
+	position: relative;
+    transform-style: inherit;
+	height: 130px;
+	margin-top: 30px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: #111827;
+	opacity:0.3;
+    background-size: cover;
+	background-position: center;
+    transform-origin: center center 0 ;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.footer h1{
+	font-size: 20px;
+	color: white;
+	font-family: SanFranBold;
+}
+
+#youtube{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#youtube:hover{
+	color: #B30010;
+}
+
+#github{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#github:hover{
+	color: #942AF8;
+}
+
+#twitter{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#twitter:hover{
+	color: #00B9EB;
+}
+
+#wiki{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#wiki:hover{
+	color: #CFCFCF;
+}
+
+#proj{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	font-family: SanFranBold;
+	transition:all .2s linear
+}
+
+#proj:hover{
+	color: #2196f3;
+}
+
+.copyrights{
+	font-size: 15px;
+	color: #545862;
+	text-align: center;
+}
+.hwq {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hwq h1 {
+  font-size: 4vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  font-family: SanFranHeavy;
+}
+
+.hwq, .hwq:before {
+    background: 50% 50% / cover;
+}
+
+.hwq::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(img/test.jpg);
+    background-size: cover;
+  background-position: center;
+    transform-origin: center center 0 ;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+.hwqe {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    background: url(img/thanks.jpg);
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+}
+.hwqe h1 {
+  font-size: 4vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  font-family: SanFranHeavy;
+}
+.box3{
+  display: inline-block;
+  border: 2px solid white;
+  margin: 0;
+  padding: 0;
+  height:250px;
+  width: 250px;
 }
