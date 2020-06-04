@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nas sajt</title>
+        <link rel="stylesheet" href="sty.css" />
+		<script src="https://kit.fontawesome.com/e3e41ea48e.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    <body onload="realtimeClock()">
+		<header>
+            <h1>Questionnaire</h1>
+        </header>
+        <div class="container">
+        <div class="box1"> 
+        </div>
+		<div style="padding: 40px; padding-right: 60px">
+        <br>
+        <br>
+    <form action="main.html" method="get" style="text-align: center;">
+        <p> <b>Введите свое ФИО</b> </p>
+        Имя: <input type="text" name="firstname" required /><br/>
+        Фамилия: <input type="text" name="lastname" required /><br/>
+        Отчество: <input type="text" name="lastname" required /><br/><br/>
+        <p style="text-align: center;"><b>Введите свой пол</b></p>
+        <input type="radio" name="sex" Value="Man" Checked>Мужской <br/>
+        <input type="radio" name="sex" Value="Woman">Женский<br/><br/>
+        <p> <b>Как вы относитесь к играм?</b> </p>
+        <input type="checkbox" />
+        Положительно, они развивают<br/>
+        <input type="checkbox" /> 
+        Безразлично, мне нет дел до игр <br/>
+        <input type="checkbox"/>
+        Отритцательно, игры учат только плохому <br/><br/>
+        <p> <b>Как вам наш сайт?</b> </p>
+        <select>
+            <option>Отлично</option>
+            <option>Хорошо</option>
+            <option>Нормально</option>
+            <option>Удовлетворительно</option>
+            <option>Плохо</option>
+        </select>
+        <br/><br/>
+        <p> <b>Оставьте примечание</b></p>
+        <textarea name="Letter" rows=3 cols=35></textarea>
+        <br/><br/>
+
+        <input type="submit" value="Отправить"><br/>
+    </form>
+        <div class="box2"></div>
+		</div>
+        </div>
+
+		<script type="text/javascript" src="scri.js"></script>
+    </body>
+</html>
